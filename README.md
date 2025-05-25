@@ -7,10 +7,10 @@
 - To use **`github-ucvc`**, you can either clone the project using **Git**:
 
 ```bash
-git clone --depth 1 https://github.com/TechWhizKid/github-ucvc.git
+git clone --depth 1 https://github.com/8gudbits/github-ucvc.git
 ```
 
-- Or simply click **[here](https://github.com/TechWhizKid/github-ucvc/blob/main/github_ucvc.py)** to download the main file “**github_ucvc.py**”
+- Or simply click **[here](github_ucvc.py)** to download the main file “**github_ucvc.py**”
 
 ## Usage
 
@@ -27,7 +27,7 @@ latest_release_date=03-03-2024
 from github_ucvc import compare_version as cv
 
 # cv(current_version, version_file_url, section, key, debug)
-checker = cv("03-03-2024", "https://raw.githubusercontent.com/TechWhizKid/github-ucvc/main/version.ini",
+checker = cv("03-03-2024", "https://raw.githubusercontent.com/8gudbits/github-ucvc/main/version.ini",
                               "version_info", "latest_release_date", debug=True)
 
 if checker.compare_by_rdate() == 0:
@@ -47,7 +47,7 @@ latest_release_type=preview
 from github_ucvc import compare_version as cv
 
 # cv(current_version, version_file_url, section, key, debug)
-checker = cv("alpha", "https://raw.githubusercontent.com/TechWhizKid/github-ucvc/main/version.ini",
+checker = cv("alpha", "https://raw.githubusercontent.com/8gudbits/github-ucvc/main/version.ini",
                               "version_info", "latest_release_type", debug=True)
 
 if checker.compare_by_rtype() == 0:
@@ -67,7 +67,7 @@ latest_release_version=1.2.2
 from github_ucvc import compare_version as cv
 
 # cv(current_version, version_file_url, section, key, debug)
-checker = cv("1.2.2", "https://raw.githubusercontent.com/TechWhizKid/github-ucvc/main/version.ini",
+checker = cv("1.2.2", "https://raw.githubusercontent.com/8gudbits/github-ucvc/main/version.ini",
                               "version_info", "latest_release_type", debug=True)
 
 if checker.compare_by_version() == 0:
@@ -81,7 +81,7 @@ elif checker.compare_by_version() == 1:
 ```py
 from github_ucvc import compare_version as cv
 
-version_file_url = "https://raw.githubusercontent.com/TechWhizKid/github-ucvc/main/version.ini"
+version_file_url = "https://raw.githubusercontent.com/8gudbits/github-ucvc/main/version.ini"
 content = cv().get_version_files_text(version_file_url)
 
 print(content) # You can now use the text to compare versions manually

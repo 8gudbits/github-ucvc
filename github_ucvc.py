@@ -203,7 +203,7 @@ class compare_version:
 
 # Usage example:
 if __name__ == "__main__":
-    checker = compare_version("03-03-2024", "https://raw.githubusercontent.com/TechWhizKid/github-ucvc/main/version.ini",
+    checker = compare_version("03-03-2024", "https://raw.githubusercontent.com/8gudbits/github-ucvc/main/version.ini",
                               "version_info", "latest_release_date", debug=True)
     if checker.compare_by_rdate() == 0:
         print(f"\n{checker.compare_by_rdate()} - INFO: Current version is the latest version.")
